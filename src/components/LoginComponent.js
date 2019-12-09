@@ -19,7 +19,7 @@ class Login extends Component {
 
     this.state = {
       email: '',
-      password: ''
+      password: '',
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -38,7 +38,13 @@ class Login extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    alert("Um nome foi enviado: " + JSON.stringify(this.state));
+    
+    if(this.state.email === 'admin@email.com' && this.state.password === '123'){
+      console.log('Redirecionando...');
+      this.props.isLogged(true);
+    } else {
+      console.log('Usuario nao reconhecido');
+    }
   }
 
   render() {

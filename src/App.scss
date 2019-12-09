@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 $primary: #f8f9fa;
 
 html {
   body {
     background-color: $primary;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
   }
 }
