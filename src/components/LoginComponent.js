@@ -43,7 +43,7 @@ class Login extends Component {
       console.log('Redirecionando...');
       this.props.isLogged(true);
     } else {
-      console.log('Usuario nao reconhecido');
+      console.log('Usuario nao reconhecido ou senha incorreta');
     }
   }
 
