@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import { Container, Row, Col, Jumbotron, Card, CardBody, CardTitle, ListGroup, ListGroupItem } from 'reactstrap';
 
-import NavBar from './NavBarComponent';
-
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +18,6 @@ class Home extends Component {
 
         return (
             <React.Fragment>
-                <NavBar />
                 <Container>
                     <Row className="mt-3 mt-md-5">
                         <Col md="12">

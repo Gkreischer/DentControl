@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Login from "./LoginComponent";
 import Home from "./HomeComponent";
+import Clientes from "./ClientesComponent";
+import NavBar from "./NavBarComponent";
 import { Redirect, Switch, Route } from "react-router-dom";
-
+import { AuthRoute } from 'react-router-auth';
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -10,8 +12,7 @@ class Main extends Component {
     this.state = {
       isOpen: false,
       // Set to true for development
-      isLogged: true
-      
+      isLogged: false
     };
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
@@ -32,18 +33,14 @@ class Main extends Component {
 
   render() {
 
-    const HomePage = () => {
-      return (
-        <Home />
-      );
-    }
-
     if (this.state.isLogged) {
       return (
         <React.Fragment>
-          <Redirect to="/home" />
+        <Redirect to="/home" />
+          <NavBar />
           <Switch>
-            <Route path="/home" component={HomePage} />
+            <AuthRoute path="/home" component={Home} redirectTo="/login" authenticated={this.state.isLogged} /> 
+            <AuthRoute path="/clientes" component={Clientes} redirectTo="/login" authenticated={this.state.isLogged} /> 
           </Switch>
         </React.Fragment>
       );
@@ -51,13 +48,13 @@ class Main extends Component {
       return (
         <React.Fragment>
           <Redirect to="/login" />
-          <Switch>
-            <Route path="/login" component={() => <Login isLogged={this.handleLogin} />} />
-          </Switch>
+          <Route
+            path="/login"
+            component={() => <Login isLogged={this.handleLogin} />}
+          />
         </React.Fragment>
       );
     }
-
   }
 }
 

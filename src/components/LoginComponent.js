@@ -40,7 +40,7 @@ class Login extends Component {
     event.preventDefault();
     
     if(this.state.email === 'admin@email.com' && this.state.password === '123'){
-      console.log('Redirecionando...');
+      console.log('Usuario cadastrado.');
       this.props.isLogged(true);
     } else {
       console.log('Usuario nao reconhecido ou senha incorreta');
