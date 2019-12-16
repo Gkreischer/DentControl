@@ -57,6 +57,9 @@ class Home extends Component {
                                             </CardBody>
                                         </Card>
                                     </Col>
+                                    <Col md="6" xs="12">
+                                        <iframe src="https://web.whatsapp.com/" width="500" height="350" allowfullscreen></iframe>
+                                    </Col>
                                 </Row>
 
 

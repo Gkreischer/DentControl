@@ -22,7 +22,7 @@ const NavBar = props => {
   return (
     <React.Fragment>
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/home">reactstrap</NavbarBrand>
+        <NavbarBrand href="/home">DentControl</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
@@ -33,7 +33,7 @@ const NavBar = props => {
             </NavItem>
             <NavItem>
               <Link className="nav-link" to="/clientes">
-                <span className="fa fa-home fa-lg"></span> Clientes
+                <span className="fa fa-users fa-lg"></span> Clientes
               </Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>

@@ -12,7 +12,7 @@ class Main extends Component {
     this.state = {
       isOpen: false,
       // Set to true for development
-      isLogged: false
+      isLogged: true
     };
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
