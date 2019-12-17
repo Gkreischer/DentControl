@@ -36,19 +36,18 @@ const NavBar = props => {
                 <span className="fa fa-users fa-lg"></span> Clientes
               </Link>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <Link className="nav-link" to="/estoque">
+                <span className="fa fa-archive fa-lg"></span> Estoque
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="nav-link" to="/estoque">
+                <span className="fa fa-medkit fa-lg"></span> Consulta
+              </Link>
+            </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText>Contate-nos</NavbarText>
         </Collapse>
       </Navbar>
     </React.Fragment>

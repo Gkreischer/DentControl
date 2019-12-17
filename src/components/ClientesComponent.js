@@ -101,29 +101,73 @@ class Clientes extends Component {
                     <Col xs="12" md="7">
                       <Card className="mt-md-2 mx-md-5">
                         <CardBody>
-                          <h3>Lais Castilho</h3>
-                          <p className="text-muted">
-                            Data de cadastro: 15/12/2019
-                          </p>
-                          <dl className="row">
-                            <dt className="col-sm-3">Consultas até o momento</dt>
-                            <dd className="col-sm-9">5</dd>
+                          <Container fluid>
+                            <Row>
+                              <Col xs="12" md="6">
+                                <img
+                                  className="img-fluid"
+                                  src={require("./../shared/images/user.jpg")}
+                                  alt="Imagem do usuario"
+                                />
+                              </Col>
+                              <Col xs="12" md="6">
+                                <h3>Lais Castilho</h3>
+                                <p className="text-muted">
+                                  Data de cadastro: 15/12/2019
+                                </p>
+                                <dl className="row">
+                                  <dt className="col-sm-6">
+                                    Consultas até o momento
+                                  </dt>
+                                  <dd className="col-sm-6">5</dd>
 
-                            <dt className="col-sm-3">Faltas</dt>
-                            <dd className="col-sm-9">
-                              <p>1</p>
-                            </dd>
+                                  <dt className="col-sm-6">Faltas</dt>
+                                  <dd className="col-sm-6">
+                                    <p>1</p>
+                                  </dd>
 
-                            <dt className="col-sm-3">Valor total</dt>
-                            <dd className="col-sm-9">1350</dd>
+                                  <dt className="col-sm-6">Valor total</dt>
+                                  <dd className="col-sm-6">1350</dd>
 
-                            <dt className="col-sm-3">Ações</dt>
-                            <dd className="col-sm-9">
-                                <Button color="primary" type="button">
-                                    <i className="fa fa-search" aria-hidden="true"></i>
-                                </Button>
-                            </dd>
-                          </dl>
+                                  <dt className="col-sm-4">Ações</dt>
+                                  <dd className="col-sm-8">
+                                    <Button
+                                      size="sm"
+                                      color="primary"
+                                      type="button"
+                                    >
+                                      <i
+                                        className="fa fa-search"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </Button>
+                                    <Button
+                                      size="sm"
+                                      className="ml-md-1"
+                                      color="warning"
+                                      type="button"
+                                    >
+                                      <i
+                                        className="fa fa-pencil"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </Button>
+                                    <Button
+                                      size="sm"
+                                      className="ml-md-1"
+                                      color="danger"
+                                      type="button"
+                                    >
+                                      <i
+                                        className="fa fa-times"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </Button>
+                                  </dd>
+                                </dl>
+                              </Col>
+                            </Row>
+                          </Container>
                         </CardBody>
                       </Card>
                     </Col>
