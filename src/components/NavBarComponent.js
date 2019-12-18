@@ -6,14 +6,10 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
   NavbarText
 } from "reactstrap";
 import { withRouter, Link } from "react-router-dom";
+
 const NavBar = props => {
   const [isOpen, setIsOpen] = useState(false);
 

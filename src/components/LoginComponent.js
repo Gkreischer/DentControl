@@ -13,6 +13,8 @@ import {
   Button
 } from "reactstrap";
 
+import Reveal from 'react-reveal/Reveal';
+
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -38,8 +40,8 @@ class Login extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    
-    if(this.state.email === 'admin@email.com' && this.state.password === '123'){
+
+    if (this.state.email === 'admin@email.com' && this.state.password === '123') {
       console.log('Usuario cadastrado.');
       this.props.isLogged(true);
     } else {
@@ -53,47 +55,49 @@ class Login extends Component {
         <Container>
           <Row className="d-flex justify-content-center align-self-center ">
             <Col md="4" xs="12">
-              <Card className="mt-5">
-                <CardImg
-                  top
-                  width="10%"
-                  src={require("./../shared/images/logo.jpeg")}
-                  alt="Logo da empresa"
-                />
-                <CardBody>
-                  <Container>
-                    <Row className="d-flex justify-content-center">
-                      <Col md="10" xs="12">
-                        <Form onSubmit={this.handleSubmit}>
-                          <FormGroup>
-                            <Label for="email">Email</Label>
-                            <Input
-                              type="email"
-                              name="email"
-                              id="email"
-                              value={this.state.email}
-                              onChange={this.handleInputChange}
-                            />
-                          </FormGroup>
-                          <FormGroup>
-                            <Label for="password">Senha</Label>
-                            <Input
-                              type="password"
-                              name="password"
-                              id="password"
-                              value={this.state.password}
-                              onChange={this.handleInputChange}
-                            />
-                          </FormGroup>
-                          <FormGroup className="text-center">
-                            <Button color="primary">Login</Button>
-                          </FormGroup>
-                        </Form>
-                      </Col>
-                    </Row>
-                  </Container>
-                </CardBody>
-              </Card>
+              <Reveal>
+                <Card className="mt-5">
+                  <CardImg
+                    top
+                    width="10%"
+                    src={require("./../shared/images/logo.jpeg")}
+                    alt="Logo da empresa"
+                  />
+                  <CardBody>
+                    <Container>
+                      <Row className="d-flex justify-content-center">
+                        <Col md="10" xs="12">
+                          <Form onSubmit={this.handleSubmit}>
+                            <FormGroup>
+                              <Label for="email">Email</Label>
+                              <Input
+                                type="email"
+                                name="email"
+                                id="email"
+                                value={this.state.email}
+                                onChange={this.handleInputChange}
+                              />
+                            </FormGroup>
+                            <FormGroup>
+                              <Label for="password">Senha</Label>
+                              <Input
+                                type="password"
+                                name="password"
+                                id="password"
+                                value={this.state.password}
+                                onChange={this.handleInputChange}
+                              />
+                            </FormGroup>
+                            <FormGroup className="text-center">
+                              <Button color="primary">Login</Button>
+                            </FormGroup>
+                          </Form>
+                        </Col>
+                      </Row>
+                    </Container>
+                  </CardBody>
+                </Card>
+              </Reveal>
             </Col>
           </Row>
         </Container>

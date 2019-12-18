@@ -9,9 +9,7 @@ import {
   FormGroup,
   Label,
   Button,
-  Input,
-  Card,
-  CardBody
+  Input
 } from "reactstrap";
 
 class Estoque extends Component {
@@ -29,28 +27,28 @@ class Estoque extends Component {
             <Col md="3" xs="12">
               <Jumbotron className="mt-3 mt-md-5">
                 <Container fluid>
-                  <Row>
+                  <Row className="text-center">
                     <Col md="12" xs="12">
                       <Button color="info" size="lg">Fornecedores</Button>
                     </Col>
-
                   </Row>
-                  <Row className="mt-md-3">
+                  <Row className="mt-3 mt-md-3 text-center">
                     <Col md="12" xs="12">
                       <p className="lead">Itens que acabarão</p>
+                      <Button type="button" color="warning">8</Button>
                     </Col>
                   </Row>
-                  <Row className="mt-md-3">
+                  <Row className="mt-3 mt-md-3 text-center">
                     <Col md="12" xs="12">
                       <p className="lead">Itens em falta</p>
+                      <Button type="button" color="danger">4</Button>
                     </Col>
                   </Row>
                 </Container>
               </Jumbotron>
             </Col>
             <Col md="9" xs="12">
-              <Jumbotron className="mt-3 mt-md-5">
-
+              <Jumbotron className="mt-md-5">
                 <Container fluid>
                   <Row>
                     <Col md="6" xs="12">

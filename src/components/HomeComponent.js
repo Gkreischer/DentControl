@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
 import { Container, Row, Col, Jumbotron, Card, CardBody, CardTitle, ListGroup, ListGroupItem } from 'reactstrap';
-
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -43,7 +41,7 @@ class Home extends Component {
                                         </Card>
                                     </Col>
                                     <Col md="3" xs="12">
-                                        <Card>
+                                        <Card className="mt-3 mt-md-0">
                                             <CardBody>
                                                 <CardTitle><b>Avisos</b></CardTitle>
                                                 <ListGroup flush>
@@ -58,7 +56,7 @@ class Home extends Component {
                                         </Card>
                                     </Col>
                                     <Col md="6" xs="12">
-                                        <iframe src="https://web.whatsapp.com/" width="500" height="350" allowfullscreen></iframe>
+
                                     </Col>
                                 </Row>
 
