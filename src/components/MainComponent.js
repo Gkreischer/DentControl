@@ -4,6 +4,7 @@ import Home from "./HomeComponent";
 import Clientes from "./ClientesComponent";
 import NavBar from "./NavBarComponent";
 import Estoque from './EstoqueComponent';
+import Consulta from './ConsultaComponent';
 import { Redirect, Switch, Route } from "react-router-dom";
 import { AuthRoute } from 'react-router-auth';
 class Main extends Component {
@@ -43,6 +44,8 @@ class Main extends Component {
             <AuthRoute path="/home" component={Home} redirectTo="/login" authenticated={this.state.isLogged} /> 
             <AuthRoute path="/clientes" component={Clientes} redirectTo="/login" authenticated={this.state.isLogged} /> 
             <AuthRoute path="/estoque" component={Estoque} redirectTo="/login" authenticated={this.state.isLogged} /> 
+            <AuthRoute path="/consulta" component={Consulta} redirectTo="/login" authenticated={this.state.isLogged} /> 
+
           </Switch>
         </React.Fragment>
       );

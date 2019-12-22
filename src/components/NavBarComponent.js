@@ -38,7 +38,7 @@ const NavBar = props => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/estoque">
+              <Link className="nav-link" to="/consulta">
                 <span className="fa fa-medkit fa-lg"></span> Consulta
               </Link>
             </NavItem>

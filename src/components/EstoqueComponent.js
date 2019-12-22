@@ -9,7 +9,11 @@ import {
   FormGroup,
   Label,
   Button,
-  Input
+  Input,
+  ListGroup,
+  ListGroupItem,
+  ListGroupItemHeading,
+  ListGroupItemText
 } from "reactstrap";
 
 class Estoque extends Component {
@@ -25,27 +29,18 @@ class Estoque extends Component {
         <Container>
           <Row>
             <Col md="3" xs="12">
-              <Jumbotron className="mt-3 mt-md-5">
-                <Container fluid>
-                  <Row className="text-center">
-                    <Col md="12" xs="12">
-                      <Button color="info" size="lg">Fornecedores</Button>
-                    </Col>
-                  </Row>
-                  <Row className="mt-3 mt-md-3 text-center">
-                    <Col md="12" xs="12">
-                      <p className="lead">Itens que acabarão</p>
-                      <Button type="button" color="warning">8</Button>
-                    </Col>
-                  </Row>
-                  <Row className="mt-3 mt-md-3 text-center">
-                    <Col md="12" xs="12">
-                      <p className="lead">Itens em falta</p>
-                      <Button type="button" color="danger">4</Button>
-                    </Col>
-                  </Row>
-                </Container>
-              </Jumbotron>
+              <ListGroup className="mt-md-5">
+                <ListGroupItem tag="button" active>
+                  <ListGroupItemHeading>Estoque</ListGroupItemHeading>
+                  <ListGroupItemText>Visualize seus recursos</ListGroupItemText>
+                </ListGroupItem>
+                <ListGroupItem tag="button">
+                  <ListGroupItemHeading>Fornecedores</ListGroupItemHeading>
+                  <ListGroupItemText>
+                    Gerencie suas informações
+                  </ListGroupItemText>
+                </ListGroupItem>
+              </ListGroup>
             </Col>
             <Col md="9" xs="12">
               <Jumbotron className="mt-md-5">
@@ -81,11 +76,7 @@ class Estoque extends Component {
                             <td>Seringa Tríplice</td>
                             <td>10</td>
                             <td className="text-center">
-                              <Button
-                                size="sm"
-                                color="primary"
-                                type="button"
-                              >
+                              <Button size="sm" color="primary" type="button">
                                 <i
                                   className="fa fa-search"
                                   aria-hidden="true"
@@ -120,11 +111,7 @@ class Estoque extends Component {
                             <td>Gase</td>
                             <td>5</td>
                             <td className="text-center">
-                              <Button
-                                size="sm"
-                                color="primary"
-                                type="button"
-                              >
+                              <Button size="sm" color="primary" type="button">
                                 <i
                                   className="fa fa-search"
                                   aria-hidden="true"
@@ -159,11 +146,7 @@ class Estoque extends Component {
                             <td>Algodão</td>
                             <td>30</td>
                             <td className="text-center">
-                              <Button
-                                size="sm"
-                                color="primary"
-                                type="button"
-                              >
+                              <Button size="sm" color="primary" type="button">
                                 <i
                                   className="fa fa-search"
                                   aria-hidden="true"
