@@ -33,7 +33,7 @@ const NavBar = props => {
               </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/estoque">
+              <Link className="nav-link" to="/controladorEstoque">
                 <span className="fa fa-archive fa-lg"></span> Estoque
               </Link>
             </NavItem>
