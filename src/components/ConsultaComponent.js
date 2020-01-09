@@ -10,8 +10,7 @@ import {
   Button,
   Input,
   Card,
-  CardBody,
-  Badge
+  CardBody
 } from "reactstrap";
 
 class Consulta extends Component {

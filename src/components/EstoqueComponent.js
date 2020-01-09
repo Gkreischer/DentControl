@@ -15,6 +15,7 @@ import {
   ListGroupItemHeading,
   ListGroupItemText
 } from "reactstrap";
+import Fornecedores from './FornecedoresComponent';
 
 class ControladorEstoque extends Component {
   constructor(props) {
@@ -43,7 +44,7 @@ class ControladorEstoque extends Component {
           <Container>
             <Row>
               <Col md="3" xs="12">
-                <ListGroup className="mt-md-5">
+                <ListGroup className="mt-3 mt-md-5">
                   <ListGroupItem
                     onClick={this.alteraComponenteVisualizavel}
                     tag="button"
@@ -71,7 +72,7 @@ class ControladorEstoque extends Component {
                 <Jumbotron className="mt-md-5">
                   <Container fluid>
                     <Row>
-                      <Col md="6" xs="12">
+                      <Col md="12" xs="12">
                         <Estoque />
                       </Col>
                     </Row>
@@ -89,7 +90,7 @@ class ControladorEstoque extends Component {
           <Container>
             <Row>
               <Col md="3" xs="12">
-                <ListGroup className="mt-md-5">
+                <ListGroup className="mt-3 mt-md-5">
                   <ListGroupItem
                     onClick={this.alteraComponenteVisualizavel}
                     tag="button"
@@ -117,7 +118,7 @@ class ControladorEstoque extends Component {
                 <Jumbotron className="mt-md-5">
                   <Container fluid>
                     <Row>
-                      <Col md="6" xs="12">
+                      <Col md="12" xs="12">
                         <Fornecedores />
                       </Col>
                     </Row>
@@ -246,22 +247,6 @@ class Estoque extends Component {
             </tr>
           </tbody>
         </Table>
-      </React.Fragment>
-    );
-  }
-}
-
-class Fornecedores extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <h1>Fornecedores</h1>
       </React.Fragment>
     );
   }
