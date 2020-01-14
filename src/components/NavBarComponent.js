@@ -42,6 +42,11 @@ const NavBar = props => {
                 <span className="fa fa-medkit fa-lg"></span> Consulta
               </Link>
             </NavItem>
+            <NavItem>
+              <Link className="nav-link" to="/agendamentos">
+                <span className="fa fa-calendar fa-lg"></span> Agendamentos 
+              </Link>
+            </NavItem>
           </Nav>
           <NavbarText>Contate-nos</NavbarText>
         </Collapse>
