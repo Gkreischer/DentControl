@@ -29,7 +29,7 @@ const NavBar = props => {
             </NavItem>
             <NavItem>
               <Link className="nav-link" to="/clientes">
-                <span className="fa fa-users fa-lg"></span> Clientes
+                <span className="fa fa-users fa-lg"></span> Pacientes
               </Link>
             </NavItem>
             <NavItem>

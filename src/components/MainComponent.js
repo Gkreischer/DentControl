@@ -6,8 +6,10 @@ import NavBar from "./NavBarComponent";
 import ControladorEstoque from './EstoqueComponent';
 import Consulta from './ConsultaComponent';
 import Agendamentos from './AgendamentosComponent';
+import AddClientes from "./AddClientesComponent";
 import { Redirect, Switch, Route } from "react-router-dom";
 import { AuthRoute } from 'react-router-auth';
+
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -46,7 +48,7 @@ class Main extends Component {
             <AuthRoute path="/clientes" component={Clientes} redirectTo="/login" authenticated={this.state.isLogged} /> 
             <AuthRoute path="/controladorEstoque" component={ControladorEstoque} redirectTo="/login" authenticated={this.state.isLogged} /> 
             <AuthRoute path="/consulta" component={Consulta} redirectTo="/login" authenticated={this.state.isLogged} /> 
-            <AuthRoute path="/agendamentos" component={Agendamentos} redirectTo="/login" authenticated={this.state.isLogged} /> 
+            <AuthRoute path="/agendamentos" component={Agendamentos} redirectTo="/login" authenticated={this.state.isLogged} />
           </Switch>
         </React.Fragment>
       );
